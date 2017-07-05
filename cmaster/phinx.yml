@@ -1,0 +1,26 @@
+paths:
+    migrations: ./db/migrations
+    seeds: ./db/seeds
+
+environments:
+    default_migration_table: cmaster
+    default_database: development
+    production:
+        adapter: mysql
+        host: localhost
+        name: cmaster
+        user: root
+        pass: ''
+        port: 3306
+        charset: utf8
+
+    development:
+        adapter: mysql
+        host: localhost
+        name: cmaster
+        user: root
+        pass: ''
+        port: 3306
+        charset: utf8
+
+version_order: creation
